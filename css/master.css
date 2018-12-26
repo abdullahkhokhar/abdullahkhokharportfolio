@@ -7,12 +7,7 @@ body, html {
 }
 
 body {
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a00fb+0,e600ff+100 */
-    background: #4a00fb; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #4a00fb 0%,#e600ff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #4a00fb 0%,#e600ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a00fb', endColorstr='#e600ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
