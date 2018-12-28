@@ -34,8 +34,6 @@ figure {
     background: #fff;
     max-width: 200px;
     max-height: 200px;
-    width: auto;
-    height: auto;
     margin-top: 2em;
 }
 
@@ -150,8 +148,8 @@ p {
 
     body {
         display: grid;
-        grid-template-columns: 20% auto;
-        padding: 2em;
+        grid-template-columns: 30% auto;
+        padding: 3em;
     }
 
     #menu {
@@ -180,8 +178,6 @@ p {
         background: #fff;
         max-width: 250px;
         max-height: 250px;
-        width: auto;
-        height: auto;
         margin-top: 2em;
     }
 
@@ -200,6 +196,7 @@ p {
     }
 
     ul li a:hover {
+      background-image: linear-gradient(120deg, #fff 0%, #fff 100%);
         background-color: #fff;
     }
 
