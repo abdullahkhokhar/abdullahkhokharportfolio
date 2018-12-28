@@ -176,8 +176,8 @@ p {
     #avatar {
         border-radius: 50%;
         background: #fff;
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 250px;
+        max-height: 250px;
         margin-top: 2em;
     }
 
