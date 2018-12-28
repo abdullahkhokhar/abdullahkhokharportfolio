@@ -260,14 +260,14 @@ p {
     }
 
     .round1{
-      width: 42%;
+      width: 62%;
       margin: 0px 0px 0px 0px;
       -webkit-animation: r1 8s linear infinite;
       position: relative;
     }
 
     .round2{
-      width: 39%;
+      width: 59%;
       margin: 0px 0px 0px 0px;
       -webkit-animation: r1 8s linear infinite;
       position: relative;
