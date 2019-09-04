@@ -10,11 +10,45 @@ body {
     background: linear-gradient(270deg, #fda085, #a1c4fd, #c2e9fb);
     background-size: 600% 600%;
 
-    -webkit-animation: MoveBG 7s ease infinite;
+    /* -webkit-animation: MoveBG 7s ease infinite;
     -moz-animation: MoveBG 7s ease infinite;
     animation: MoveBG 7s ease infinite;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+}
+
+.card-title{
+  text-decoration: none;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  width: 40%;
+  float:right;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container1 {
+  padding: 2px 16px;
+}
+
+#link-decore{
+  text-decoration: underline;
+  color:#282C34;
+  font-weight: bold;
 }
 
 @-webkit-keyframes MoveBG {
@@ -32,8 +66,6 @@ body {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-
-
 
 aside {
     color: #fff;
@@ -75,10 +107,11 @@ nav {
     position: absolute;
     display: block ;
     background: #fff;
+    opacity:0.9;
     width: 50%;
     left: 0;
     top: 0;
-    height: 55%;
+    height: 65%;
 }
 
 ul {
@@ -150,22 +183,77 @@ p {
 .round1{
   width: 62%;
   margin: 0px 0px 0px 0px;
-  -webkit-animation: r1 10s linear infinite;
+  /* -webkit-animation: r1 10s linear infinite; */
   position: relative;
 }
 
 .round2{
   width: 59%;
   margin: 0px 0px 0px 0px;
-  -webkit-animation: r1 10s linear infinite;
+  /* -webkit-animation: r1 10s linear infinite; */
   position: relative;
 }
 
 .round3{
   margin: 0px 0px 0px 0px;
-  -webkit-animation: r3 60s linear infinite;
+  /* -webkit-animation: r3 60s linear infinite; */
   position: relative;
 }
+
+.hoverCSS3{
+    display: inline-block;
+    position: relative;
+    padding-bottom:10px;
+    color: #00D8FF;
+}
+
+.a-title{
+  text-decoration: none;
+  color:#282C34;
+}
+
+.hoverCSS3:after{
+    content: "";
+    position: absolute;
+    background-color: #282C34;
+    height: 3px;
+    width: 0;
+    top: 100%;
+    left: 0;
+    display: inline-block;
+    opacity: 0;
+
+    -webkit-transition: opacity .4s ease-out, width .4s ease-out  ;
+   -moz-transition: opacity .4s ease-out, width .4s ease-out ;
+   -o-transition: opacity .4s ease-out, width .4s ease-out ;
+   transition: opacity .4s ease-out, width .4s ease-out;
+}
+
+.hoverCSS3:before{
+    width: 22px;
+    height: 22px;
+    display: inline;
+    float: right;
+    margin-left: 8px;
+  	margin-top: 8px;
+
+    -webkit-transition:  -webkit-transform .4s ease-out;
+   -moz-transition: transform .4s ease-out;
+   -o-transition:  transform .4s ease-out ;
+   transition:transform .4s ease-out, -ms-transform .4s ease-out;
+}
+
+.hoverCSS3:hover:before{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* IE 9 */
+    -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+}
+
+.hoverCSS3:hover:after{
+    opacity: 1;
+    width: 100%;
+}
+
 
 @media only screen and (min-width: 768px) {
 
@@ -249,32 +337,24 @@ p {
       width: 60%;
     }
 
-    @keyframes r1 {
-      0%{transform: rotate(-360deg)};
-      10%{transform: rotate(0deg)};
-    }
-
-    @keyframes r3 {
-      0%{transform: rotate(-360deg)};
-      10%{transform: rotate(0deg)};
-    }
-
     .round1{
-      width: 82%;
+      width: 62%;
       margin: 0px 0px 0px 0px;
-      -webkit-animation: r1 8s linear infinite;
+      /* -webkit-animation: r1 10s linear infinite; */
       position: relative;
     }
 
     .round2{
-      width: 79%;
+      width: 59%;
       margin: 0px 0px 0px 0px;
-      -webkit-animation: r1 8s linear infinite;
+      /* -webkit-animation: r1 10s linear infinite; */
       position: relative;
     }
 
     .round3{
       margin: 0px 0px 0px 0px;
-      -webkit-animation: r3 60s linear infinite;
+      /* -webkit-animation: r3 60s linear infinite; */
       position: relative;
     }
+
+  }
