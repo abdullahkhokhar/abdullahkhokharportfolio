@@ -17,6 +17,18 @@ body {
     background-attachment: fixed; */
 }
 
+.pic-caption{
+  color:black;
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+.pic-num{
+  color:black;
+  font-size: 0.8em;
+  margin-top: 2px;
+}
+
 .card-title{
   text-decoration: none;
 }
@@ -80,7 +92,7 @@ aside {
 }
 
 figure {
-    margin: 0;
+    margin: -20px;
     text-align: center;
 }
 
@@ -200,16 +212,18 @@ p {
   position: relative;
 }
 
+.a-title{
+  text-decoration: none;
+  color:#282C34;
+}
+
+/* TITLE UNDERLINE DECORATION EXPERIENCE AND REACT  */
+
 .hoverCSS3{
     display: inline-block;
     position: relative;
     padding-bottom:10px;
     color: #00D8FF;
-}
-
-.a-title{
-  text-decoration: none;
-  color:#282C34;
 }
 
 .hoverCSS3:after{
@@ -250,6 +264,57 @@ p {
 }
 
 .hoverCSS3:hover:after{
+    opacity: 1;
+    width: 100%;
+}
+
+/* FOR EXPERIENCE TITLE */
+
+.hover-Exp{
+    display: inline-block;
+    position: relative;
+    padding-bottom:10px;
+    color: #8EC63F;
+}
+
+.hover-Exp:after{
+    content: "";
+    position: absolute;
+    background-color: #282C34;
+    height: 3px;
+    width: 0;
+    top: 100%;
+    left: 0;
+    display: inline-block;
+    opacity: 0;
+
+    -webkit-transition: opacity .4s ease-out, width .4s ease-out  ;
+   -moz-transition: opacity .4s ease-out, width .4s ease-out ;
+   -o-transition: opacity .4s ease-out, width .4s ease-out ;
+   transition: opacity .4s ease-out, width .4s ease-out;
+}
+
+.hover-Exp:before{
+    width: 22px;
+    height: 22px;
+    display: inline;
+    float: right;
+    margin-left: 8px;
+  	margin-top: 8px;
+
+    -webkit-transition:  -webkit-transform .4s ease-out;
+   -moz-transition: transform .4s ease-out;
+   -o-transition:  transform .4s ease-out ;
+   transition:transform .4s ease-out, -ms-transform .4s ease-out;
+}
+
+.hover-Exp:hover:before{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* IE 9 */
+    -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+}
+
+.hover-Exp:hover:after{
     opacity: 1;
     width: 100%;
 }
