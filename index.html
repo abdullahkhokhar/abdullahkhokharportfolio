@@ -1,72 +1,243 @@
+<!-- A VERY SPECIAL THANKS TO:
+Jevin Sidhu and Brian Nguyen, who's projects have been of imense help to put this together. -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/master.css">
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>Abdullah Khokhar</title>
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+</head>
 
-  <body>
-    <aside> <!--- side navigation bar -->
-      <figure>
-        <img id = "avatar" src="sunny.svg"/>
-        <figcaption>Abdullah Khokhar</figcaption> <!-- the name -->
-        <a class ="pic-caption" href="mailto:abdullahk786@hotmail.com" target="_blank">abdullahk786@hotmail.com</a>
-        <p class ="pic-num">(647) 534-4472</p>
-      </figure>
-      <img id = "menu" src = "assets/menu.svg"/>
-      <nav>
-        <ul>
-            <li><a href="https://drive.google.com/file/d/1DqbkuTAgg99hzsG0AJuGcwZ9yB6ENONW/view?usp=sharing" target="_blank">Resume</a></li>
-            <li><a href="react-projects.html">React Projects</a></li>
-            <li><a href="experience.html">Previous Experience</a></li>
-        </ul>
+<body>
+    <div id="wrapper">
+        <div class="desc">
+            <div id="header">
+              <div>
+                <h1 class="purple-link">Abdullah Khokhar</h1>
+              </div>
+            </div>
 
-      </nav>
-    </aside>
-    <main>
-      <h1>Welcome To my World</h1>
-      <p>I’m a 19-year-old finishing third-year studies at the University of
-        Toronto, enrolled in the CS Specialist program while also pursing a
-        minor in Mathematics.
-      </p>
-      <p>
-        Recently, I have completed a summer-long internship where systems related
-        to global production were analyzed and provided enhancements to in the
-        form of software development. With the aid of my gained experience, I
-        now seek my next big venture for my <span style="font-weight:bold;">PEY 2020 internship placement!</span>
-      </p>
+            <p class="intro">
+                I’m a 20-year-old finishing third-year studies at the <span class="bold uoft">University of Toronto</span>,
+                enrolled in the Computer Science Specialist program while simultaneously pursing
+                a minor in Mathematical Sciences.
+            </p>
+            <p class="intro">
+                Last summer, I worked at
+                <a class="bold sav" href="https://www.savaria.com/?lang=en" target="_blank">Savaria</a>, where global production
+                systems were analyzed and provided enhancements to in the form of software development.
+            </p>
+            <p class="intro">
+                From May 2020, I will be working, as part of a 12-month internship, at <a class="bold oracle" href="https://www.oracle.com/index.html" target="_blank">Oracle</a>
+                as a full stack developer.
+                With the aid of my previously gained experience, I look to polish upon as well as learn new technologies to enhance
+                my ability as a well rounded developer! Stay tuned for my adventures during this time.
+            </p>
 
-      <div class = "dock">
-        <div id = "container-box">
-          <a href="https://www.facebook.com/abdullah.khokhar.52" target="_blank">
-          <img src="Icons/FB.svg" class = "round1"/>
-          </a>
-        </div>
-        <div id = "container-box">
-          <a href="https://twitter.com" target="_blank">
-          <img class = "round1" src="Icons/Twitter.svg"/>
-          </a>
-        </div>
-        <div id = "container-box">
-          <a href="https://www.instagram.com/abdullahk_10/" target="_blank">
-          <img class = "round1" src="Icons/Instagram.svg"/>
-          </a>
-        </div>
-        <div id = "container-box">
-          <a href="https://github.com/abdullahkhokhar" target="_blank">
-          <img class = "round2" src="Icons/Github.svg"/>
-          </a>
-        </div>
-        <div id = "container-box">
-          <a href="mailto:abdullahk786@hotmail.com" target="_blank">
-          <img class = "round2" src="Icons/Email.svg"/>
-          </a>
-        </div>
-      </div>
+            <div id="icons">
+              <a href="https://www.linkedin.com/in/abdullah-k/" target="_blank">
+                <i aria-hidden="true" class="icon fa fa-linkedin"></i>
+              </a>
+              <a href="http://github.com/abdullahkhokhar" target="_blank">
+                <i aria-hidden="true" class="icon fa fa-github"></i>
+              </a>
+              <a href="http://instagram.com/abdullahk_10/" target="_blank">
+                <i aria-hidden="true" class="icon fa fa-instagram"></i>
+              </a>
 
-    </main>
-    <script type="text/javascript" src="main-page.js"></script>
-  </body>
+            </div>
 
+            <div id="links">
+                <div id="info">
+                    <h3>email</h3>
+                    <a href="mailto:abdullahk786@hotmail.com" target="_blank">
+                        <p class="underline details">abdullahk786@hotmail.com</p>
+                    </a>
+                </div>
+                <div id="info">
+                    <h3>location</h3>
+                    <p class="details">Toronto, ON</p>
+                </div>
+                <div id="info">
+                    <h3>resume</h3>
+                    <a href="https://drive.google.com/file/d/1drifKVDsqnyZRhk66Va6Rf1c6LTI3It9/view?usp=sharing"
+                        target="_blank">
+                        <p class="underline details">PDF</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                                                    <!--WORK EXPERINCE  -->
+
+    <div id="works-container">
+        <h2 class="subheader">Work Experience</h2>
+        <div id="works-wrapper">
+  <!-- SAVARIA -->
+            <div class="work-wrapper">
+                <div class="work-header">
+                    <div>
+                        <h2>Savaria</h2>
+                        <h4>Software Developer and Business Systems Analyst</h4>
+                    </div>
+                    <img class="work-img" src="img/work/sav.png" />
+                </div>
+                <p>
+                    Led Development of a global product tracking system application, for both employees and management.
+                    Development in C used to structure system servers to display elicited manufacturing times.
+                </p>
+                <div class="work-project-wrapper">
+                    <a href="https://hxouse.com" target="_blank">
+                        <div class="work-project sav-box">
+                            <div class="work-project-header">
+                                <h4>V-1504</h4>
+                                <p>Written Programs Repo.</p>
+                            </div>
+                            <img alt="hxouse logo" src="img/work/code.png" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+<!-- ORACLE -->
+          <div class="work-wrapper">
+              <div class="work-header">
+                  <div>
+                      <h2>Oracle</h2>
+                      <h4>Full Stack Software Developer</h4>
+                  </div>
+                  <img class="work-img" src="img/work/oracle.png" />
+              </div>
+              <p>
+                  Starting May 2020!
+              </p>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- PROJECTS -->
+
+    <div id="projects-wrapper">
+        <h2 class="subheader">Projects</h2>
+        <div id="projects">
+            <a class="project" href="https://github.com/abdullahkhokhar/Lights-Out" target="_blank">
+                <div class="img-wrapper">
+                    <img class="project-img" src="img/projects/lights-out.png" />
+                </div>
+                <div class="project-details">
+                    <h2>Lights Out</h2>
+                    <p class="project-writing">
+                      A React based logic/puzzle game, played on a gird of
+                      individual lights, which can either be lit or unlit. The
+                      puzzle is won when when all of the lights are turned off.
+                    </p>
+                    <p class="project-view">View Project</p>
+                </div>
+            </a>
+
+            <a class="project" href="https://github.com/abdullahkhokhar/React-Dad-Jokes"target="_blank">
+                <div class="img-wrapper">
+                    <img class="project-img" src="img/projects/dad-jokes.png" />
+                </div>
+                <div class="project-details">
+                    <h2>Dad Jokes</h2>
+                    <p class="project-writing">
+                      A React app that lets people view and vote on cheesy jokes.
+                      To generate jokes,the ICanHazDadJoke API is used. Each joke has a
+                      “vote-up” button, a “vote-down” button, and the net score for each joke.
+                    </p>
+                    <p class="project-view">View Project</p>
+                </div>
+            </a>
+
+            <a class="project" href="#" id="micro-paint-wrapper">
+                <div class="img-wrapper">
+                    <img class="project-img" src="img/projects/track.png" />
+                </div>
+                <div class="project-details">
+                    <h2>Track The Client</h2>
+                    <p class="project-writing">
+                      Server program that implements a task management protocol.
+                      Protocol permits clients to access and connect to your server and perform execution
+                      of certain jobs, client can view all active jobs with their process IDs.
+                    </p>
+                    <p class="project-view">Source Code Available Upon Request</p>
+                </div>
+            </a>
+
+            <a class="project" href="#" id="track-wrapper">
+                <div class="img-wrapper">
+                    <img class="project-img" src="img/projects/micro-paint.png" />
+                </div>
+                <div class="project-details">
+                    <h2>Microsoft Paint GUI</h2>
+                    <p class="project-writing">
+                        JavaFX used to construct GUI elements of MS Paint, with 7 different design patterns and detailed unit tests to increase efficiency in code structure and reuse.
+                    </p>
+                    <p class="project-view">Source Code Available Upon Request</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="other-projects-wrapper">
+    <h2 class="subheader">Other Projects</h2>
+    <div id="other-projects-container">
+        <a href="https://github.com/abdullahkhokhar/React-Planner" target="_blank" class="other-project-wrapper">
+            <h3 class="other-project-header">React To-Do App</h3>
+            <p class="other-project-description">Easy to use task management.</p>
+        </a>
+        <a href="https://github.com/abdullahkhokhar/Github-Finder" target="_blank" class="other-project-wrapper">
+            <h3 class="other-project-header">Github Finder</h3>
+            <p class="other-project-description">
+              Application built with ES6 classes, with GitHub API and async technology.
+              Allows users to activley query other GitHub users.</p>
+        </a>
+        <a href="https://github.com/abdullahkhokhar/Pokedex" target="_blank" class="other-project-wrapper">
+            <h3 class="other-project-header">Pokedex</h3>
+            <p class="other-project-description">Dual with your Pokemon.</p>
+        </a>
+        <a href="https://github.com/abdullahkhokhar/Algorithms-and-Data-Structures" target="_blank" class="other-project-wrapper">
+            <h3 class="other-project-header">Algorithms and Data Structures</h3>
+            <p class="other-project-description">I love to work with individuals to teach and help them work through
+            the mathematical complexities of CS! Here are a series of problems I have taught and worked through with others.</p>
+        </a>
+    </div>
+</div>
+
+
+
+    <script src="https://use.fontawesome.com/50b899dcd8.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            (i[r] =
+                i[r] ||
+                function () {
+                    (i[r].q = i[r].q || []).push(arguments);
+                }),
+                (i[r].l = 1 * new Date());
+            (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        })(
+            window,
+            document,
+            "script",
+            "https://www.google-analytics.com/analytics.js",
+            "ga"
+        );
+
+        ga("create", "UA-51745249-3", "auto");
+        ga("send", "pageview");
+    </script>
+</body>
+</body>
 </html>
